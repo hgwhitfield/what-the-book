@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <title>What The Book</title>
 </head>
 <body>
-    
+    <main class="container">
+        <!-- Logo Section -->
+        <section id="logo-section" class="text-center mt-5 mb-5">
+            <img src="/" alt="Logo" class="logo">
+        </section>
+
+        <!-- Search Section -->
+        <section id="search-section" class="text-center mb-4">
+            <div class="input-group mb-4 border p-1">
+                <input type="search" id="search-input" placeholder="Search Book Titles, Author Names, or ISBN to get started." class="form-control bg-none border-0">
+                <div class="input-group-append border-0">
+                    <span id="button-addon3" class="btn btn-link" onclick="searchBooks()">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works and To Be Read Button -->
+        <div class="d-flex flex-column align-items-center mb-4 mt-5">
+            <!-- How it Works Button -->
+            <button type="button" class="btn howitworks-btn mb-2" data-toggle="modal" data-target="#howItWorksModal">
+                How It Works
+            </button>
+            <!-- To Be Read List Button -->
+            <button type="button" class="btn tbr-btn mb-2" data-toggle="modal" data-target="#tbrModal">
+                To Be Read List
+            </button>
+        </div>
+        <!-- How It Works Modal -->
+        <!-- To Be Read List Modal -->
+    </main>
+    <!-- Footer Section -->
+    <footer id="footer-section">
+        <div class="line line-top"></div>
+        <div class="line line-middle"></div>
+        <div class="line line-bottom"></div>
+    </footer>
+        <!-- Javascript, bootstrap, fontawesome -->
+        <script src="assets/js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
