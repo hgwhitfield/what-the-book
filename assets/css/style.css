@@ -15,9 +15,94 @@ main {
 }
 
 .logo {
-    max-width: 100%; /* Adjust the size of the logo as needed */
+    max-width: 100%;
 }
 
 #logo-section {
     margin-top: 4rem; /* Add more space above the logo */
+}
+
+#search-section {
+    margin-top: 0; /* Remove margin-top to bring search bar closer to logo */
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Chivo', sans-serif;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 4px solid black; 
+    border-radius: 2px; 
+    padding: 0.5rem;
+    background-color: white;
+    outline: 4px solid black;
+}
+
+.input-group .form-control {
+    flex: 1;
+    border: none; 
+    background: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem; 
+}
+
+.input-group-append .btn {
+    border: none; 
+    background: none;
+    outline: none;
+    box-shadow: none; 
+    color: black; 
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.input-group-append .btn:hover {
+    color: rgba(0, 0, 0, 0.555); 
+}
+
+.input-group-append .btn:focus {
+    outline: none; 
+    box-shadow: none;
+}
+
+.input-group .form-control::placeholder {
+    color: gray; 
+    opacity: 1; 
+    font-size: 1.2rem; 
+}
+
+input.form-control:focus {
+    box-shadow: none; 
+    border: 1.5px solid #E3E6ED; 
+    background-color: #F7F8FD; 
+    letter-spacing: 1px;
+}
+
+.tbr-btn {
+    background-color: #818bed;
+    color: #404041;
+    font-weight: bold;
+    width: 100%; 
+    max-width: 300px;
+    margin: 0 auto; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.howitworks-btn {
+    background-color: #e9b550;
+    color: #404041;
+    font-weight: bold;
+    width: 20%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.btn-primary:focus {
+    box-shadow: none; 
 }
