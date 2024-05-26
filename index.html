@@ -29,19 +29,79 @@
 
         <!-- How it Works and To Be Read Button -->
         <div class="d-flex flex-column align-items-center mb-4 mt-5">
+            
             <!-- How it Works Button -->
             <button type="button" class="btn howitworks-btn mb-2" data-toggle="modal" data-target="#howItWorksModal">
                 How It Works
             </button>
+
             <!-- To Be Read List Button -->
             <button type="button" class="btn tbr-btn mb-2" data-toggle="modal" data-target="#tbrModal">
                 To Be Read List
             </button>
         </div>
+
         <!-- Results Area -->
         <section id="results-section" class="row justify-content-center"></section>
+
         <!-- How It Works Modal -->
+        <div class="modal fade" id="howItWorksModal" tabindex="-1" role="dialog" aria-labelledby="howItWorksModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="howItWorksModalLabel">How It Works</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Placeholder content for How It Works -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary mb-2" data-dismiss="modal" aria-label="Close How It Works Modal">Close</button>
+                <div class="line line-top"></div>
+                <div class="line line-middle"></div>
+                <div class="line line-bottom"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
         <!-- To Be Read List Modal -->
+<div class="modal fade" id="tbrModal" tabindex="-1" role="dialog" aria-labelledby="tbrModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tbrModalLabel">To Be Read List</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row" id="tbr-list">
+                        <!-- TBR List will be displayed here -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary mb-2" data-dismiss="modal">Close</button>
+                <div class="line line-top"></div>
+                <div class="line line-middle"></div>
+                <div class="line line-bottom"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
     </main>
     <!-- Footer Section -->
     <footer id="footer-section">
