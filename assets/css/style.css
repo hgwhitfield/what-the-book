@@ -256,3 +256,40 @@ input.form-control:focus {
     background-color: #4ac0bc; /* Blue */
     height: 30px; /* 3/5 of 10px */
 }
+
+/* Responsive grid classes for different screen sizes */
+@media (max-width: 575.98px) {
+    .tbr-item, .book-item {
+        flex: 0 0 80%; /* 80% width for small screens */
+        max-width: 80%; /* 80% maximum width */
+    }
+    .book-item {
+        max-width: 80%; /* 80% maximum width */
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .tbr-item {
+        flex: 0 0 50%; /* 50% width for small-medium screens */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .tbr-item {
+        flex: 0 0 33.33%; /* 33.33% width for medium screens */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .tbr-item {
+        flex: 0 0 25%; /* 25% width for large screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .tbr-item {
+        flex: 0 0 20%; /* 20% width for extra large screens */
+        max-width: 200px; /* Maximum width */
+    }
+}
