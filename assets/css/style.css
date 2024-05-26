@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #ece7d2; 
+    font-family: 'Chivo', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    padding-top: 6rem;
+}
+
+.logo {
+    max-width: 100%; /* Adjust the size of the logo as needed */
+}
+
+#logo-section {
+    margin-top: 4rem; /* Add more space above the logo */
+}
