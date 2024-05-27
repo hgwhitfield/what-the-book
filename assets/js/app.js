@@ -39,7 +39,7 @@ function displayResults(data) {
                     <p class="card-text">${book.authors ? book.authors.join(', ') : 'Unknown Author'}</p>
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-outline-primary btn-block" onclick="addToFavorites(event, '${book.title}', '${book.authors ? book.authors.join(', ') : 'Unknown Author'}', '${book.imageLinks ? book.imageLinks.thumbnail : 'https://via.placeholder.com/128x200'}')" aria-label="Add ${book.title} to To Be Read list">Add to TBR</button>
+                    <button class="btn btn-outline-primary btn-block" onclick="addToFavorites(event, '${book.title}', '${book.authors ? book.authors.join(', ') : 'Unknown Author'}', '${book.imageLinks ? book.imageLinks.thumbnail : 'https://via.placeholder.com/128x200'}', '${book.infoLink || book.previewLink}')" aria-label="Add ${book.title} to To Be Read list">Add to TBR</button>
                 </div>
             </div>
         `;
@@ -48,7 +48,7 @@ function displayResults(data) {
     });
 }
 
-function addToFavorites(event, title, author, image) {
+function addToFavorites(event, title, author, image, link) {
     event.stopPropagation(); // Prevent the click event from propagating to the card
     let tbrList = JSON.parse(localStorage.getItem('tbrList')) || [];
     if (tbrList.some(book => book.title === title)) {
@@ -56,7 +56,7 @@ function addToFavorites(event, title, author, image) {
         return;
     }
 
-    tbrList.push({ title, author, image });
+    tbrList.push({ title, author, image, link });
     localStorage.setItem('tbrList', JSON.stringify(tbrList));
     displayTBRList();
 }
