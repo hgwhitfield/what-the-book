@@ -16,6 +16,11 @@ main {
 
 .logo {
     max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.02);
 }
 
 #logo-section {
@@ -90,18 +95,29 @@ input.form-control:focus {
     margin: 0 auto; 
     padding-top: 1%;
     padding-bottom: 1%;
+    transition: transform 0.3s ease, background-color 0.3s ease; /
 }
 
-/* Default width for larger screens */
 .howitworks-btn {
     background-color: #e9b550;
     color: #404041;
     font-weight: bold;
-    width: 20%; /* Narrower width for larger screens */
-    max-width: 300px; /* Maximum width for buttons */
-    margin: 0 auto; /* Center the buttons */
+    width: 20%; 
+    max-width: 300px; 
+    margin: 0 auto; 
     padding-top: 1%;
     padding-bottom: 1%;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+.howitworks-btn:hover {
+    transform: scale(1.05); 
+    background-color: #d4a54a; 
+}
+
+.tbr-btn:hover {
+    transform: scale(1.05); 
+    background-color: #6a74d4; 
 }
 
 .btn-primary:focus {

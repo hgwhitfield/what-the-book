@@ -1,5 +1,5 @@
 function searchBooks() {
-    var searchText = document.getElementById('search-input').value;
+    const searchText = document.getElementById('search-input').value;
     if (searchText.trim() === '') {
         alert('Please enter a search term');
         return;
@@ -25,9 +25,11 @@ function displayResults(data) {
     data.items.forEach(item => {
         const book = item.volumeInfo;
         const bookElement = document.createElement('div');
-        bookElement.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'col-xs-12', 'book-item'); // Responsive classes
+        bookElement.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'col-xs-12', 'book-item');
+
+        // Create the HTML structure for the book item
         bookElement.innerHTML = `
-            <div class="card h-100">
+            <div class="card h-100" onclick="window.open('${book.infoLink || book.previewLink}', '_blank')">
                 <figure>
                     <img src="${book.imageLinks ? book.imageLinks.thumbnail : 'https://via.placeholder.com/128x200'}" class="card-img-top" alt="${book.title} cover image">
                     <figcaption>${book.title} by ${book.authors ? book.authors.join(', ') : 'Unknown Author'}</figcaption>
@@ -37,20 +39,17 @@ function displayResults(data) {
                     <p class="card-text">${book.authors ? book.authors.join(', ') : 'Unknown Author'}</p>
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-outline-primary btn-block" onclick="addToFavorites('${book.title}', '${book.authors ? book.authors.join(', ') : 'Unknown Author'}', '${book.imageLinks ? book.imageLinks.thumbnail : 'https://via.placeholder.com/128x200'}')" aria-label="Add ${book.title} to To Be Read list">Add to TBR</button>
+                    <button class="btn btn-outline-primary btn-block" onclick="addToFavorites(event, '${book.title}', '${book.authors ? book.authors.join(', ') : 'Unknown Author'}', '${book.imageLinks ? book.imageLinks.thumbnail : 'https://via.placeholder.com/128x200'}')" aria-label="Add ${book.title} to To Be Read list">Add to TBR</button>
                 </div>
             </div>
         `;
 
-                bookElement.addEventListener('click', () => {
-                    window.open(book.infoLink || book.previewLink, '_blank');
-                });
-        
         resultsSection.appendChild(bookElement);
     });
 }
 
-function addToFavorites(title, author, image) {
+function addToFavorites(event, title, author, image) {
+    event.stopPropagation(); // Prevent the click event from propagating to the card
     let tbrList = JSON.parse(localStorage.getItem('tbrList')) || [];
     if (tbrList.some(book => book.title === title)) {
         alert('This book is already in your TBR list.');
@@ -69,9 +68,9 @@ function displayTBRList() {
 
     tbrList.forEach(book => {
         const bookElement = document.createElement('div');
-        bookElement.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'col-xs-12', 'tbr-item'); // Responsive classes
+        bookElement.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'col-xs-12', 'tbr-item');
         bookElement.innerHTML = `
-            <div class="card h-100">
+            <div class="card h-100" onclick="window.open('${book.link}', '_blank')">
                 <figure>
                     <img src="${book.image}" class="card-img-top" alt="${book.title} cover image">
                     <figcaption>${book.title} by ${book.author}</figcaption>
@@ -88,6 +87,7 @@ function displayTBRList() {
 
 document.addEventListener('DOMContentLoaded', () => {
     displayTBRList();
+
     const searchInput = document.getElementById('search-input');
     searchInput.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
