@@ -41,6 +41,11 @@ function displayResults(data) {
                 </div>
             </div>
         `;
+
+                bookElement.addEventListener('click', () => {
+                    window.open(book.infoLink || book.previewLink, '_blank');
+                });
+        
         resultsSection.appendChild(bookElement);
     });
 }
@@ -81,4 +86,12 @@ function displayTBRList() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', displayTBRList);
+document.addEventListener('DOMContentLoaded', () => {
+    displayTBRList();
+    const searchInput = document.getElementById('search-input');
+    searchInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            searchBooks();
+        }
+    });
+});
