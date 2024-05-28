@@ -321,12 +321,47 @@ input.form-control:focus {
 /* media query for how it works button styling relative to to be read list button */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .howitworks-btn {
-        width: 30%; /* 30% width for tablet-sized screens */
+        width: 30%; 
     }
 }
 /* media query for how it works button styling relative to to be read list button */
 @media (max-width: 767.98px) {
     .howitworks-btn {
-        width: 60%; /* 60% width for mobile-sized screens */
+        width: 60%; 
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none; /* Remove default border */
+}
+
+.modal-title-svg {
+    max-height: 3em; 
+    width: auto; 
+    max-width: 100%; 
+    flex-shrink: 0;
+}
+
+.modal-header .close {
+    margin-left: auto; 
+    padding: 1rem; 
+}
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+    .modal-header {
+        padding: 0.5rem; 
+    }
+
+    .modal-title-svg {
+        max-height: 2em; 
+    }
+
+    .modal-header .close {
+        padding: 0.5rem;
+        padding-right: 1rem; 
     }
 }
