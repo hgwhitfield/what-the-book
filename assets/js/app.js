@@ -95,3 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+module.exports = {
+    searchBooks,
+    displayResults,
+    addToFavorites,
+    displayTBRList
+};
