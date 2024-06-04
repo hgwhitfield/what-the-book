@@ -1,26 +1,22 @@
-// Mocking localStorage
-const localStorageMock = (() => {
-    let store = {};
-    return {
-        getItem: (key) => store[key] || null,
-        setItem: (key, value) => store[key] = value.toString(),
-        clear: () => store = {},
-        removeItem: (key) => delete store[key]
-    };
-})();
-Object.defineProperty(global, 'localStorage', { value: localStorageMock });
-
 const fetchMock = require('jest-fetch-mock');
 fetchMock.enableMocks();
 
-// Adjust the path to where your app.js file is located
-const { searchBooks, displayResults, addToFavorites, displayTBRList } = require('./assets/js/app.js');
+const {
+    searchBooks,
+    fetchBooks,
+    displayResults,
+    addToFavorites,
+    displayTBRList
+} = require('./assets/js/app.js');
 const { waitFor } = require('@testing-library/dom');
 
 describe('searchBooks', () => {
     beforeEach(() => {
         fetch.resetMocks();
-        document.body.innerHTML = '<input type="text" id="search-input" value="test" /><div id="results-section"></div>';
+        document.body.innerHTML = `
+            <input type="text" id="search-input" value="test" />
+            <div id="results-section"></div>
+        `;
     });
 
     test('alerts if search term is empty', () => {
@@ -47,11 +43,36 @@ describe('searchBooks', () => {
         };
 
         fetch.mockResponseOnce(JSON.stringify(mockResponse));
+
         await searchBooks();
 
         const resultsSection = document.getElementById('results-section');
         await waitFor(() => {
             expect(resultsSection.innerHTML).toContain('Test Book');
+        });
+    });
+
+    test('handles invalid data from API gracefully', async () => {
+        const mockResponse = {
+            items: [
+                {
+                    volumeInfo: {
+                        // Missing title and authors
+                        imageLinks: { thumbnail: 'test.jpg' },
+                        infoLink: 'http://example.com'
+                    }
+                }
+            ]
+        };
+
+        fetch.mockResponseOnce(JSON.stringify(mockResponse));
+
+        await searchBooks();
+
+        const resultsSection = document.getElementById('results-section');
+        await waitFor(() => {
+            expect(resultsSection.innerHTML).toContain('undefined');
+            expect(resultsSection.innerHTML).toContain('Unknown Author');
         });
     });
 });
@@ -64,17 +85,21 @@ describe('addToFavorites', () => {
 
     test('adds a book to TBR list', () => {
         const event = { stopPropagation: jest.fn() };
-        addToFavorites(event, 'Test Book', 'Author 1', 'test.jpg', 'http://example.com');
+        const button = document.createElement('button');
+        addToFavorites(event, 'Test Book', 'Author 1', 'test.jpg', 'http://example.com', button);
 
         const tbrList = JSON.parse(localStorage.getItem('tbrList'));
         expect(tbrList).toHaveLength(1);
         expect(tbrList[0].title).toBe('Test Book');
+        expect(button.classList.contains('btn-success')).toBe(true);
+        expect(button.disabled).toBe(true);
     });
 
     test('prevents duplicate books in TBR list', () => {
         const event = { stopPropagation: jest.fn() };
-        addToFavorites(event, 'Test Book', 'Author 1', 'test.jpg', 'http://example.com');
-        addToFavorites(event, 'Test Book', 'Author 1', 'test.jpg', 'http://example.com');
+        const button = document.createElement('button');
+        addToFavorites(event, 'Test Book', 'Author 1', 'test.jpg', 'http://example.com', button);
+        addToFavorites(event, 'Test Book', 'Author 1', 'test.jpg', 'http://example.com', button);
 
         const tbrList = JSON.parse(localStorage.getItem('tbrList'));
         expect(tbrList).toHaveLength(1);
