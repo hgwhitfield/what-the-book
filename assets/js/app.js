@@ -19,6 +19,8 @@ function searchBooks() {
         });
 }
 
+// Rest of the code...
+
 /**
  * Fetches books from the Google Books API.
  * @param {string} searchText - The text to search for.
@@ -43,7 +45,6 @@ function displayResults(data) {
     }
 
     const tbrList = getTBRList();
-
     data.items.forEach(item => {
         const book = item.volumeInfo;
         const isAdded = tbrList.some(b => b.title === book.title);
@@ -75,7 +76,7 @@ function createBookElement(book, isAdded) {
                 <p class="card-text">${book.authors ? book.authors.join(', ') : 'Unknown Author'}</p>
             </div>
             <div class="card-footer">
-                <button class="btn ${isAdded ? 'btn-success' : 'btn-outline-primary'} btn-block" onclick="addToFavorites(event, '${book.title}', '${book.authors ? book.authors.join(', ') : 'Unknown Author'}', '${imageUrl}', '${book.infoLink || book.previewLink}')" aria-label="Add ${book.title} to To Be Read list" ${isAdded ? 'disabled' : ''}>${isAdded ? 'Added' : 'Add to TBR'}</button>
+                <button class="btn ${isAdded ? 'btn-success' : 'btn-outline-primary'} btn-block" onclick="addToFavorites(event, '${book.title}', '${book.authors ? book.authors.join(', ') : 'Unknown Author'}', '${imageUrl}', '${book.infoLink || book.previewLink}', this)" aria-label="Add ${book.title} to To Be Read list" ${isAdded ? 'disabled' : ''}>${isAdded ? 'Added' : 'Add to TBR'}</button>
             </div>
         </div>
     `;
@@ -90,8 +91,9 @@ function createBookElement(book, isAdded) {
  * @param {string} author - The author(s) of the book.
  * @param {string} image - The URL of the book's cover image.
  * @param {string} link - The URL to the book's information page.
+ * @param {HTMLElement} button - The button element.
  */
-function addToFavorites(event, title, author, image, link) {
+function addToFavorites(event, title, author, image, link, button) {
     event.stopPropagation(); // Prevent the click event from propagating to the card
     let tbrList = getTBRList();
 
@@ -102,19 +104,39 @@ function addToFavorites(event, title, author, image, link) {
 
     tbrList.push({ title, author, image, link });
     saveTBRList(tbrList);
-    updateTBRButton(event.target);
+    updateTBRButton(button, true);
     displayTBRList();
 }
 
 /**
- * Updates the TBR button after a book has been added.
- * @param {HTMLElement} button - The button element.
+ * Removes a book from the "To Be Read" (TBR) list.
+ * @param {string} title - The title of the book to remove.
  */
-function updateTBRButton(button) {
-    button.classList.remove('btn-outline-primary');
-    button.classList.add('btn-success');
-    button.innerText = 'Added';
-    button.disabled = true;
+function removeFromFavorites(title) {
+    let tbrList = getTBRList();
+    tbrList = tbrList.filter(book => book.title !== title);
+    saveTBRList(tbrList);
+    displayTBRList();
+    refreshSearchResults(); // To update the search results if needed
+}
+
+/**
+ * Updates the TBR button after a book has been added or removed.
+ * @param {HTMLElement} button - The button element.
+ * @param {boolean} isAdded - Whether the book is being added or removed.
+ */
+function updateTBRButton(button, isAdded) {
+    if (isAdded) {
+        button.classList.remove('btn-outline-primary');
+        button.classList.add('btn-success');
+        button.innerText = 'Added';
+        button.disabled = true;
+    } else {
+        button.classList.remove('btn-success');
+        button.classList.add('btn-outline-primary');
+        button.innerText = 'Add to TBR';
+        button.disabled = false;
+    }
 }
 
 /**
@@ -166,10 +188,30 @@ function createTBRBookElement(book) {
                 <h5 class="card-title">${book.title}</h5>
                 <p class="card-text">${book.author}</p>
             </div>
+            <div class="card-footer">
+                <button class="btn btn-danger btn-block" onclick="removeFromFavorites('${book.title}'); event.stopPropagation();">Remove from List</button>
+            </div>
         </div>
     `;
 
     return bookElement;
+}
+
+/**
+ * Refreshes the search results to update the TBR button state.
+ */
+function refreshSearchResults() {
+    const searchText = document.getElementById('search-input').value;
+    if (searchText.trim() !== '') {
+        fetchBooks(searchText)
+            .then(data => {
+                displayResults(data);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+                displayErrorMessage('Failed to fetch data. Please try again later.');
+            });
+    }
 }
 
 /**
@@ -198,8 +240,10 @@ document.addEventListener('DOMContentLoaded', () => {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         searchBooks,
+        fetchBooks,
         displayResults,
         addToFavorites,
+        removeFromFavorites, // Add this line to export the function
         displayTBRList
     };
 }
