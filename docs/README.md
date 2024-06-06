@@ -69,16 +69,16 @@ The research phase involved understanding the needs and preferences of book enth
 Wireframes were created to outline the basic structure and layout of the website. These wireframes focused on the placement of key elements such as the search bar, book results, and the TBR list. The goal was to ensure a logical flow of information and ease of navigation. Wireframes also helped in visualizing the user journey from discovering a book to adding it to the TBR list.
 
 **Example Wireframes:**
-- ![Home Page Wireframe](/workspace/what-the-book/docs/images/what-the-book-wireframe1.PNG)
-- ![Search Results Wireframe](/workspace/what-the-book/docs/images/what-the-book-wireframe2.PNG)
-- ![TBR List Modal Wireframe](/workspace/what-the-book/docs/images/what-the-book-modal-wireframe1.PNG)
-- ![How It Works Modal Wireframe](/workspace/what-the-book/docs/images/what-the-book-modal-wireframe2.PNG)
+- ![Home Page Wireframe](../docs/images/what-the-book-modal-wireframe1.PNG)
+- ![Search Results Wireframe](../docs/images/what-the-book-wireframe2.PNG)
+- ![TBR List Modal Wireframe](../docs/images/what-the-book-modal-wireframe1.PNG)
+- ![How It Works Modal Wireframe](../docs/images/what-the-book-modal-wireframe2.PNG)
 
 ### 4. Mock-ups and Prototypes
 High-fidelity mock-ups were developed based on the wireframes. These mock-ups incorporated the chosen color palette and visual style, making the design visually appealing without being overwhelming. The mock-ups were used to gather feedback from stakeholders and users, allowing us to iterate and refine the design.
 
 **Example Mock-ups:**
-- ![Home Page and colour scheme Mock-up](/workspace/what-the-book/docs/images/mock-up-and-colours.PNG)
+- ![Home Page and colour scheme Mock-up](../docs/images/mock-up-and-colours.PNG)
 
 ### 5. Color Scheme and Inspiration
 The color palette for **"What the Book"** was chosen to evoke a sense of nostalgia and warmth associated with literature. The mid-century modern color palette was selected to give the app a retro yet timeless feel, making it inviting and enjoyable to use.
