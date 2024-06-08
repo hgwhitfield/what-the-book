@@ -10,11 +10,9 @@ function searchBooks() {
 
     fetchBooks(searchText)
         .then(data => {
-            console.log(data);
             displayResults(data);
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
             displayErrorMessage('Failed to fetch data. Please try again later.');
         });
 }
@@ -208,7 +206,6 @@ function refreshSearchResults() {
                 displayResults(data);
             })
             .catch(error => {
-                console.error('Error fetching data:', error);
                 displayErrorMessage('Failed to fetch data. Please try again later.');
             });
     }
@@ -231,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     searchInput.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
-            searchBooks(); // Trigger book search when Enter key is pressed
+            searchBooks(); 
         }
     });
 });
@@ -243,7 +240,7 @@ if (typeof module !== 'undefined' && module.exports) {
         fetchBooks,
         displayResults,
         addToFavorites,
-        removeFromFavorites, // Add this line to export the function
+        removeFromFavorites,
         displayTBRList
     };
 }
