@@ -17,8 +17,6 @@ function searchBooks() {
         });
 }
 
-// Rest of the code...
-
 /**
  * Fetches books from the Google Books API.
  * @param {string} searchText - The text to search for.
@@ -115,7 +113,7 @@ function removeFromFavorites(title) {
     tbrList = tbrList.filter(book => book.title !== title);
     saveTBRList(tbrList);
     displayTBRList();
-    refreshSearchResults(); // To update the search results if needed
+    refreshSearchResults();
 }
 
 /**
@@ -222,7 +220,7 @@ function displayErrorMessage(message) {
 
 // Set up the page when it loads
 document.addEventListener('DOMContentLoaded', () => {
-    displayTBRList(); // Display the TBR list on page load
+    displayTBRList();
 
     // Add event listener to the search input field for the Enter key
     const searchInput = document.getElementById('search-input');
