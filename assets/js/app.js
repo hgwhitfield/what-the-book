@@ -1,3 +1,5 @@
+/* global module */
+
 /**
  * Handles the search for books based on the input from the user.
  */
