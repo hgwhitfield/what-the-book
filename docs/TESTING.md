@@ -141,20 +141,26 @@ To ensure broad compatibility and optimal performance, the website was tested on
 #### First-Time User Goals Screenshots
 
 - **Understand the purpose of the site**
-  ![Understand the purpose of the site button press](../docs/images/first-time-user-goal1.png)
+  ![Understand the purpose of the site button press](../docs/images/first-time-user-goal1.PNG)
+
   *Figure 1: The how it works button shown in the middle of the page is clicked.*
 
-  ![Understand the purpose of the site modal](../docs/images/first-time-user-goal1a.png)
+  ![Understand the purpose of the site modal](../docs/images/first-time-user-goal1a.PNG)
+
   *Figure 2: The informative modal appears.*
 
 - **Navigate the website**
-  ![Navigate the website](../docs/images/first-time-user-goal2.png)
+  ![Navigate the website](../docs/images/first-time-user-goal2.PNG)
+
   *Figure 1: All the working social links shown open in a new tab.*
 
 - **To search for books by title, author, or ISBN**
-  ![To search for books by title, author, or ISBN](../docs/images/first-time-user-goal3.png)
+  ![To search for books by title, author, or ISBN](../docs/images/first-time-user-goal3.PNG)
+
   *Figure 1: A search query shown in the search box.*
-  ![To search for books by title, author, or ISBN](../docs/images/first-time-user-goal3a.png)
+
+  ![To search for books by title, author, or ISBN](../docs/images/first-time-user-goal3a.PNG)
+
   *Figure 2: The results showing after the search is conducted.*
 
 ### Returning User Goals
@@ -168,21 +174,26 @@ To ensure broad compatibility and optimal performance, the website was tested on
 #### Returning User Goals Screenshots
 
 - **See previously added books**
-  ![See previously added books](../docs/images/returning-user-goal1.png)
+  ![See previously added books](../docs/images/returning-user-goal1.PNG)
+
   *Figure 1: Book appearing in to be read list after website open and closing.*
 
 - **Search for new books**
-  ![Search for new books](../docs/images/returning-user-goal2.png)
+  ![Search for new books](../docs/images/returning-user-goal2.PNG)
+
   *Figure 1: Book searched for and 'add to TBR button pressed'.*
 
-  ![Search for new books](../docs/images/returning-user-goal2a.png)
+  ![Search for new books](../docs/images/returning-user-goal2a.PNG)
+
   *Figure 2: The book that was added showing in the TBR list.*
 
 - **Remove books from TBR list**
-  ![Search for new books](../docs/images/returning-user-goal2a.png)
+  ![Search for new books](../docs/images/returning-user-goal2a.PNG)
+
   *Figure 1: Book showing in TBR list.*
 
-  ![Remove books from TBR list](../docs/images/returning-user-goal3.png)
+  ![Remove books from TBR list](../docs/images/returning-user-goal3.PNG)
+
   *Figure 2: TBR list shown empty after remove button pressed. You can also see the green 'added' under the modal on the book has reverted to 'add to TBR'.*
 
 ### Additional Manual Tests
@@ -196,18 +207,22 @@ To ensure broad compatibility and optimal performance, the website was tested on
 #### Additional Manual Tests Screenshots
 
 - **Click on a book for more information**
-  ![Click on a book for more information](../docs/images/additional-test1.png)
+  ![Click on a book for more information](../docs/images/additional-test1.PNG)
+
   *Figure 1: The new tab window open from click on the book search, showing the more information feature works as intended.*
 
 - **View "How It Works" modal**
-  ![View "How It Works" modal](../docs/images/first-time-user-goal1a.png)
+  ![View "How It Works" modal](../docs/images/first-time-user-goal1a.PNG)
+
   *Figure 1: How It Works modal appearing as expected.*
 
 - **Indicate already added books**
-  ![Indicate already added books](../docs/images/additional-test3.png)
+  ![Indicate already added books](../docs/images/additional-test3.PNG)
+
   *Figure 1: Book search results before any have been added to TBR list.*
 
-  ![Indicate already added books](../docs/images/additional-test3.png)
+  ![Indicate already added books](../docs/images/additional-test3.PNG)
+  
   *Figure 2: Same search results afterwards showing green 'added' indication.*
 
 
