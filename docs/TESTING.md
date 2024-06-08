@@ -41,19 +41,19 @@ This section provides evidence demonstrating that:
 
 - I have used the [HTML W3C Validator](https://validator.w3.org) to validate the HTML.
 
-![W3C HTML Validation](../docs/images/html-validation.PNG)
+![W3C HTML Validation](../docs/images/html-validation.png)
 
 ### CSS 
 
 I have used the W3 [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate my CSS file.
 
-![CSS Jigsaw Validation](../docs/images/css-validation.PNG)
+![CSS Jigsaw Validation](../docs/images/css-validation.png)
 
 ### JavaScript
 
 I have used the recommended [JS Hint](https://jshint.com/) to validate my JavaScript.
 
-![JSHint](../docs/images/js-validation.PNG)
+![JSHint](../docs/images/js-validation.png)
 
 Note on JSHint testing: The JavaScript code for this project was tested using JSHINT to ensure code quality and adherence to best practices. During the testing, a warning was noted for the `module` variable being undefined. This warning appears due to the inclusion of module exports for testing purposes. This was resolved with the inclusion of `/* global module */` in the `app.js` file.
 
@@ -141,25 +141,25 @@ To ensure broad compatibility and optimal performance, the website was tested on
 #### First-Time User Goals Screenshots
 
 - **Understand the purpose of the site**
-  ![Understand the purpose of the site button press](../docs/images/first-time-user-goal1.PNG)
+  ![Understand the purpose of the site button press](../docs/images/first-time-user-goal1.png)
 
   *Figure 1: The how it works button shown in the middle of the page is clicked.*
 
-  ![Understand the purpose of the site modal](../docs/images/first-time-user-goal1a.PNG)
+  ![Understand the purpose of the site modal](../docs/images/first-time-user-goal1a.png)
 
   *Figure 2: The informative modal appears.*
 
 - **Navigate the website**
-  ![Navigate the website](../docs/images/first-time-user-goal2.PNG)
+  ![Navigate the website](../docs/images/first-time-user-goal2.png)
 
   *Figure 1: All the working social links shown open in a new tab.*
 
 - **To search for books by title, author, or ISBN**
-  ![To search for books by title, author, or ISBN](../docs/images/first-time-user-goal3.PNG)
+  ![To search for books by title, author, or ISBN](../docs/images/first-time-user-goal3.png)
 
   *Figure 1: A search query shown in the search box.*
 
-  ![To search for books by title, author, or ISBN](../docs/images/first-time-user-goal3a.PNG)
+  ![To search for books by title, author, or ISBN](../docs/images/first-time-user-goal3a.png)
 
   *Figure 2: The results showing after the search is conducted.*
 
@@ -174,25 +174,25 @@ To ensure broad compatibility and optimal performance, the website was tested on
 #### Returning User Goals Screenshots
 
 - **See previously added books**
-  ![See previously added books](../docs/images/returning-user-goal1.PNG)
+  ![See previously added books](../docs/images/returning-user-goal1.png)
 
   *Figure 1: Book appearing in to be read list after website open and closing.*
 
 - **Search for new books**
-  ![Search for new books](../docs/images/returning-user-goal2.PNG)
+  ![Search for new books](../docs/images/returning-user-goal2.png)
 
   *Figure 1: Book searched for and 'add to TBR button pressed'.*
 
-  ![Search for new books](../docs/images/returning-user-goal2a.PNG)
+  ![Search for new books](../docs/images/returning-user-goal2a.png)
 
   *Figure 2: The book that was added showing in the TBR list.*
 
 - **Remove books from TBR list**
-  ![Search for new books](../docs/images/returning-user-goal2a.PNG)
+  ![Search for new books](../docs/images/returning-user-goal2a.png)
 
   *Figure 1: Book showing in TBR list.*
 
-  ![Remove books from TBR list](../docs/images/returning-user-goal3.PNG)
+  ![Remove books from TBR list](../docs/images/returning-user-goal3.png)
 
   *Figure 2: TBR list shown empty after remove button pressed. You can also see the green 'added' under the modal on the book has reverted to 'add to TBR'.*
 
@@ -207,21 +207,21 @@ To ensure broad compatibility and optimal performance, the website was tested on
 #### Additional Manual Tests Screenshots
 
 - **Click on a book for more information**
-  ![Click on a book for more information](../docs/images/additional-test1.PNG)
+  ![Click on a book for more information](../docs/images/additional-test1.png)
 
   *Figure 1: The new tab window open from click on the book search, showing the more information feature works as intended.*
 
 - **View "How It Works" modal**
-  ![View "How It Works" modal](../docs/images/first-time-user-goal1a.PNG)
+  ![View "How It Works" modal](../docs/images/first-time-user-goal1a.png)
 
   *Figure 1: How It Works modal appearing as expected.*
 
 - **Indicate already added books**
-  ![Indicate already added books](../docs/images/additional-test3.PNG)
+  ![Indicate already added books](../docs/images/additional-test3.png)
 
   *Figure 1: Book search results before any have been added to TBR list.*
 
-  ![Indicate already added books](../docs/images/additional-test3.PNG)
+  ![Indicate already added books](../docs/images/additional-test3.png)
   
   *Figure 2: Same search results afterwards showing green 'added' indication.*
 
@@ -265,7 +265,7 @@ To run the tests, execute the following command in the terminal:
 
 Here is a screenshot of the tests passed:
 
-![Test Results Screenshot](../docs/images/jest-test.PNG)
+![Test Results Screenshot](../docs/images/jest-test.png)
 
 ### Conclusion
 
@@ -279,13 +279,13 @@ Lighthouse is an open-source, automated tool for improving the quality of web pa
 
 Here is the Lighthouse audit report for the mobile version of the website. The audit includes scores for performance, accessibility, best practices, and SEO.
 
-![Mobile Lighthouse Audit](../docs/images/mobile-lighthouse.PNG)
+![Mobile Lighthouse Audit](../docs/images/mobile-lighthouse.png)
 
 ### Desktop Lighthouse Audit
 
 Here is the Lighthouse audit report for the desktop version of the website. The audit includes scores for performance, accessibility, best practices, and SEO.
 
-![Desktop Lighthouse Audit](../docs/images/desktop-lighthouse.PNG)
+![Desktop Lighthouse Audit](../docs/images/desktop-lighthouse.png)
 
 ### Future Improvements
 
