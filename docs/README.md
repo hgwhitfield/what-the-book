@@ -6,7 +6,7 @@
 
 **"What the Book"** is an engaging, user-friendly website dedicated to book enthusiasts everywhere. This digital haven serves as a dynamic platform for book lovers to discover, explore, and organize their next great reads. Designed with simplicity and accessibility in mind, **"What the Book"** ensures that users of all ages and technical abilities can easily navigate through its features.
 
-The website is designed to be a functional, streamlined web app. The central feature is the book search tool, allowing users to find books by title, author, or ISBN effortlessly. Each search result is accompanied by detailed information, helping users make informed decisions about their next read.
+The website is designed to be a functional, streamlined web app. The central feature is the book search tool, allowing users to find books by title, author, or ISBN effortlessly. Each search result can we saved to the 'To Be Read' list which can be accessed later, allowing it to act as the online home for all the books a user may wish to read in the future.
 
 ## Table of Contents
 
@@ -230,7 +230,7 @@ The project was also deployed on GitHub Pages. To deploy your project on GitHub 
 ## Credits
 
 - I took inspiration from the Goodreads website and my own desire for a easier to use simpler version of this site.
-- Cassie by Designs a local graphic designer for creating the hero image and the Logo svg for the site.
+- Cassie by Designs a local graphic designer for helping with the design and creation of the svg assets for the site.
 - Rohit Sharma my mentor for his generous giving of time for feedback and help planning.
 - Youtube user name, Shanjai Raj. For the google books api video which was a good jumping off point when starting and showed me it was possible to implement my idea. 
 
