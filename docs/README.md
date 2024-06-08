@@ -95,9 +95,20 @@ Wireframes were created to outline the basic structure and layout of the website
 
 **Example Wireframes:**
 - ![Home Page Wireframe](../docs/images/what-the-book-wireframe1.png)
+- ![Home Page Wireframe Tablet](../docs/images/what-the-book-home-tablet.png)
+- ![Home Page Wireframe Phone](../docs/images/what-the-book-home-phone.png)
+
 - ![Search Results Wireframe](../docs/images/what-the-book-wireframe2.png)
+- ![Search Results Wireframe Tablet](../docs/images/what-the-book-search-tablet.png)
+- ![Search Results Wireframe Phone](../docs/images/what-the-book-search-phone.png)
+
 - ![TBR List Modal Wireframe](../docs/images/what-the-book-modal-wireframe1.png)
+- ![TBR List Modal Wireframe Tablet](../docs/images/to-be-read-modal-tablet.png)
+- ![TBR List Modal Wireframe Phone](../docs/images/to-be-read-modal-phone.png)
+
 - ![How It Works Modal Wireframe](../docs/images/what-the-book-modal-wireframe2.png)
+- ![How It Works Modal Wireframe Tablet](../docs/images/how-it-works-modal-tablet.png)
+- ![How It Works Modal Wireframe Phone](../docs/images/how-it-works-modal-phone.png)
 
 ### 4. Mock-ups and Prototypes
 
