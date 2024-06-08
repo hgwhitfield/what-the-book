@@ -1,10 +1,12 @@
 # What the Book
 
+![Responsive Design Screenshot](../docs/images/responsiveness.PNG)
+
+:computer: View the live site **[here](https://hgwhitfield.github.io/Knit/)**
+
 **"What the Book"** is an engaging, user-friendly website dedicated to book enthusiasts everywhere. This digital haven serves as a dynamic platform for book lovers to discover, explore, and organize their next great reads. Designed with simplicity and accessibility in mind, **"What the Book"** ensures that users of all ages and technical abilities can easily navigate through its features.
 
 The website is designed to be a functional, streamlined web app. The central feature is the book search tool, allowing users to find books by title, author, or ISBN effortlessly. Each search result is accompanied by detailed information, helping users make informed decisions about their next read.
-
-![Responsive Design Screenshot](../docs/images/responsiveness.PNG)
 
 ## Table of Contents
 
@@ -214,6 +216,26 @@ The project was also deployed on GitHub Pages. To deploy your project on GitHub 
 - In the "Source" section, click on the dropdown menu labeled "Branch" and change it from "None" to "Master".
 - The website will refresh automatically, and the deployment link will be displayed at the top of the GitHub Pages section.
 
+## Credits
+
+- I took inspiration from the Goodreads website and my own desire for a easier to use simpler version of this site.
+- Cassie by Designs a local graphic designer for creating the hero image and the Logo svg for the site.
+- Rohit Sharma my mentor for his generous giving of time for feedback and help planning.
+- Youtube user name, Shanjai Raj. For the google books api video which was a good jumping off point when starting and showed me it was possible to implement my idea. 
+
+
 ## Testing
 
-For detailed information on testing, please refer to the [Testing Documentation](TESTING.md).
+### Principles of Automated and Manual Testing
+
+Automated testing involves using software tools to run tests on the application code to check for functionality, performance, and other aspects. It's efficient for repetitive tasks, regression testing, and running large test suites. Manual testing involves human testers who interact with the application to identify issues and ensure it works as expected. It's useful for exploratory testing, usability testing, and cases where human judgment is required.
+
+### Test Procedures
+
+During the development and implementation stages, both automated and manual test procedures were applied to ensure that the deployed version matched the development version. Automated tests were run using Jest to validate functionality and performance, while manual tests were conducted to verify usability and responsiveness.
+
+### Conclusion
+
+Automated and manual testing ensured that the **"What the Book"** web application functions correctly and meets the specified requirements. The tests covered key functionalities, including searching for books, adding books to the TBR list, and displaying the TBR list. Future improvements to the tests and the application will help maintain the quality and reliability of the application as new features are added.
+
+For more detailed information on testing, please refer to the [Testing Documentation](TESTING.md).

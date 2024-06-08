@@ -138,6 +138,25 @@ To ensure broad compatibility and optimal performance, the website was tested on
 | **Navigate the website** | Navigation is smooth and all links are functional. | Navigate through different sections using the navbar and buttons. | All sections are accessible and links work correctly. [PASS] |
 | **To search for books by title, author, or ISBN** | Search bar is prominent on the home page. | Open the site and see the search bar straight away, use it to perform a search. | The search bar works as expected and the search results are provided. [PASS] |
 
+#### First-Time User Goals Screenshots
+
+- **Understand the purpose of the site**
+  ![Understand the purpose of the site button press](../docs/images/first-time-user-goal1.png)
+  *Figure 1: The how it works button shown in the middle of the page is clicked.*
+
+  ![Understand the purpose of the site modal](../docs/images/first-time-user-goal1a.png)
+  *Figure 2: The informative modal appears.*
+
+- **Navigate the website**
+  ![Navigate the website](../docs/images/first-time-user-goal2.png)
+  *Figure 1: All the working social links shown open in a new tab.*
+
+- **To search for books by title, author, or ISBN**
+  ![To search for books by title, author, or ISBN](../docs/images/first-time-user-goal3.png)
+  *Figure 1: A search query shown in the search box.*
+  ![To search for books by title, author, or ISBN](../docs/images/first-time-user-goal3a.png)
+  *Figure 2: The results showing after the search is conducted.*
+
 ### Returning User Goals
 
 | Feature | Expectation | Action | Result |
@@ -146,6 +165,26 @@ To ensure broad compatibility and optimal performance, the website was tested on
 | **Search for new books** | New books can be searched and added to the TBR list successfully. | Use the search bar to find and add a new book. | New books can be searched and added successfully. [PASS] |
 | **Remove books from TBR list** | Books can be removed from the TBR list. | Remove a book from the TBR list. | Book is successfully removed from the TBR list. [PASS] |
 
+#### Returning User Goals Screenshots
+
+- **See previously added books**
+  ![See previously added books](../docs/images/returning-user-goal1.png)
+  *Figure 1: Book appearing in to be read list after website open and closing.*
+
+- **Search for new books**
+  ![Search for new books](../docs/images/returning-user-goal2.png)
+  *Figure 1: Book searched for and 'add to TBR button pressed'.*
+
+  ![Search for new books](../docs/images/returning-user-goal2a.png)
+  *Figure 2: The book that was added showing in the TBR list.*
+
+- **Remove books from TBR list**
+  ![Search for new books](../docs/images/returning-user-goal2a.png)
+  *Figure 1: Book showing in TBR list.*
+
+  ![Remove books from TBR list](../docs/images/returning-user-goal3.png)
+  *Figure 2: TBR list shown empty after remove button pressed. You can also see the green 'added' under the modal on the book has reverted to 'add to TBR'.*
+
 ### Additional Manual Tests
 
 | Feature | Expectation | Action | Result |
@@ -153,6 +192,24 @@ To ensure broad compatibility and optimal performance, the website was tested on
 | **Click on a book for more information** | Clicking a book opens the correct Google Books page in a new tab. | Search for a book and click on it. | The book link opens the correct Google Books page. [PASS] |
 | **View "How It Works" modal** | The "How It Works" modal provides clear instructions and functional social media links. | Click the "How It Works" button. | The modal provides comprehensive instructions for using the site. Social media links open in a new tab correctly. [PASS] |
 | **Indicate already added books** | The "Add to TBR" button indicates the book is already in the TBR list. | Add a book to TBR and search for it again. | Button correctly shows "Added". [PASS] |
+
+#### Additional Manual Tests Screenshots
+
+- **Click on a book for more information**
+  ![Click on a book for more information](../docs/images/additional-test1.png)
+  *Figure 1: The new tab window open from click on the book search, showing the more information feature works as intended.*
+
+- **View "How It Works" modal**
+  ![View "How It Works" modal](../docs/images/first-time-user-goal1a.png)
+  *Figure 1: How It Works modal appearing as expected.*
+
+- **Indicate already added books**
+  ![Indicate already added books](../docs/images/additional-test3.png)
+  *Figure 1: Book search results before any have been added to TBR list.*
+
+  ![Indicate already added books](../docs/images/additional-test3.png)
+  *Figure 2: Same search results afterwards showing green 'added' indication.*
+
 
 ## Automated Testing
 
