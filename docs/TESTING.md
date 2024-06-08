@@ -135,7 +135,7 @@ To ensure broad compatibility and optimal performance, the website was tested on
 | Feature | Expectation | Action | Result |
 | --- | --- | --- | --- |
 | **Understand the purpose of the site** | The purpose of the site is clear and the navigation is intuitive. | Open the homepage and click the prominent How It Works button. | Within one click, all easy-to-follow information about the site is provided from the informative modal. [PASS] |
-| **Navigate the website** | Navigation is smooth and all links are functional. | Navigate through different sections using the navbar and buttons. | All sections are accessible and links work correctly. [PASS] |
+| **Navigate the website** | Navigation is smooth and all links are functional. | Navigate through the different sections of the site using the buttons and links. | All sections are accessible and links work correctly. [PASS] |
 | **To search for books by title, author, or ISBN** | Search bar is prominent on the home page. | Open the site and see the search bar straight away, use it to perform a search. | The search bar works as expected and the search results are provided. [PASS] |
 
 #### First-Time User Goals Screenshots
@@ -176,12 +176,12 @@ To ensure broad compatibility and optimal performance, the website was tested on
 - **See previously added books**
   ![See previously added books](../docs/images/returning-user-goal1.png)
 
-  *Figure 1: Book appearing in to be read list after website open and closing.*
+  *Figure 1: Book still appearing in the To Be Read list after the website has been open and closed.*
 
 - **Search for new books**
   ![Search for new books](../docs/images/returning-user-goal2.png)
 
-  *Figure 1: Book searched for and 'add to TBR button pressed'.*
+  *Figure 1: Book searched for and 'add to TBR button' pressed.*
 
   ![Search for new books](../docs/images/returning-user-goal2a.png)
 
@@ -209,7 +209,7 @@ To ensure broad compatibility and optimal performance, the website was tested on
 - **Click on a book for more information**
   ![Click on a book for more information](../docs/images/additional-test1.png)
 
-  *Figure 1: The new tab window open from click on the book search, showing the more information feature works as intended.*
+  *Figure 1: The new tab window open from clicking on a book search result, showing the more information feature works as intended.*
 
 - **View "How It Works" modal**
   ![View "How It Works" modal](../docs/images/first-time-user-goal1a.png)
@@ -219,11 +219,11 @@ To ensure broad compatibility and optimal performance, the website was tested on
 - **Indicate already added books**
   ![Indicate already added books](../docs/images/additional-test3.png)
 
-  *Figure 1: Book search results before any have been added to TBR list.*
+  *Figure 1: Book search results before any of the books have been added to TBR list.*
 
   ![Indicate already added books](../docs/images/additional-test3.png)
   
-  *Figure 2: Same search results afterwards showing green 'added' indication.*
+  *Figure 2: Same search results afterwards, showing green 'added' indication.*
 
 
 ## Automated Testing
