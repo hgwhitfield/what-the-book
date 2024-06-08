@@ -221,7 +221,7 @@ To ensure broad compatibility and optimal performance, the website was tested on
 
   *Figure 1: Book search results before any of the books have been added to TBR list.*
 
-  ![Indicate already added books](../docs/images/additional-test3.png)
+  ![Indicate already added books](../docs/images/additional-test3a.png)
   
   *Figure 2: Same search results afterwards, showing green 'added' indication.*
 
