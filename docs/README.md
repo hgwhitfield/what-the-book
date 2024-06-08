@@ -216,4 +216,4 @@ The project was also deployed on GitHub Pages. To deploy your project on GitHub 
 
 ## Testing
 
-For detailed information on testing, please refer to the [Testing Documentation](testing.md).
+For detailed information on testing, please refer to the [Testing Documentation](TESTING.md).
