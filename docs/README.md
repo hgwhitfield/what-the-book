@@ -60,13 +60,13 @@ The primary goals when developing **"What the Book"** were to create a simple, s
 ## UX Design Documentation
 
 ### 1. Introduction
-The primary goal of the UX design process for **"What the Book"** was to create a simple, intuitive, and engaging web application that allows users to discover, explore, and organize their next great reads. The vision was to provide a seamless experience where book lovers could manage their To Be Read (TBR) lists efficiently, eliminating the need for notes on their phones or scattered lists. The web app was designed to be scalable, with the potential to evolve into a standalone application in the future.
+The primary goal of the UX design process for **"What the Book"** was to create a simple, intuitive, and engaging web application that allows users to discover, explore, and organise their next great reads. The vision was to provide a seamless experience where book lovers could manage their To Be Read (TBR) lists efficiently, eliminating the need for notes on their phones or scattered lists. The web app was designed to be scalable, with the potential to evolve into a standalone application in the future.
 
 ### 2. Research and Planning
-The research phase involved understanding the needs and preferences of book enthusiasts. We conducted surveys and interviews with potential users, which provided insights into their reading habits and how they currently manage their TBR lists. Analyzing competitor websites and apps helped us identify common features and areas for improvement. The planning phase focused on defining the core functionalities and ensuring that the design would be user-centric and adaptable for future enhancements.
+The research phase involved understanding the needs and preferences of book enthusiasts. We conducted surveys and interviews with potential users, which provided insights into their reading habits and how they currently manage their TBR lists. Analysing competitor websites and apps helped us identify common features and areas for improvement. The planning phase focused on defining the core functionalities and ensuring that the design would be user-centric and adaptable for future enhancements.
 
 ### 3. Wireframes
-Wireframes were created to outline the basic structure and layout of the website. These wireframes focused on the placement of key elements such as the search bar, book results, and the TBR list. The goal was to ensure a logical flow of information and ease of navigation. Wireframes also helped in visualizing the user journey from discovering a book to adding it to the TBR list.
+Wireframes were created to outline the basic structure and layout of the website. These wireframes focused on the placement of key elements such as the search bar, book results, and the TBR list. The goal was to ensure a logical flow of information and ease of navigation. Wireframes also helped in visualising the user journey from discovering a book to adding it to the TBR list.
 
 **Example Wireframes:**
 - ![Home Page Wireframe](../docs/images/what-the-book-wireframe1.PNG)
@@ -75,22 +75,26 @@ Wireframes were created to outline the basic structure and layout of the website
 - ![How It Works Modal Wireframe](../docs/images/what-the-book-modal-wireframe2.PNG)
 
 ### 4. Mock-ups and Prototypes
-High-fidelity mock-ups were developed based on the wireframes. These mock-ups incorporated the chosen color palette and visual style, making the design visually appealing without being overwhelming. The mock-ups were used to gather feedback from stakeholders and users, allowing us to iterate and refine the design.
+High-fidelity mock-ups were developed based on the wireframes. These mock-ups incorporated the chosen colour palette and visual style, making the design visually appealing without being overwhelming. The mock-ups were used to gather feedback from stakeholders and users, allowing us to iterate and refine the design.
 
 **Example Mock-up:**
-- ![Home Page and colour scheme Mock-up](../docs/images/mock-up-and-colours.PNG)
+- ![Home Page and Colour Scheme Mock-up](../docs/images/mock-up-and-colours.PNG)
 
-### 5. Color Scheme and Inspiration
-The color palette for **"What the Book"** was chosen to evoke a sense of nostalgia and warmth associated with literature. The mid-century modern color palette was selected to give the app a retro yet timeless feel, making it inviting and enjoyable to use.
+### 5. Colour Scheme and Inspiration
+The colour palette for **"What the Book"** was chosen to evoke a sense of nostalgia and warmth associated with literature. The mid-century modern colour palette was selected to give the app a retro yet timeless feel, making it inviting and enjoyable to use.
 
-### 6. Design Implementation
+### 6. Typography
+The typography for **"What the Book"** uses the Chivo font, which was chosen for its readability and modern aesthetic. Chivo's clean and contemporary look complements the mid-century modern colour palette, contributing to the overall inviting and user-friendly design of the web app.
+
+### 7. Design Implementation
 The design elements from the wireframes and mock-ups were implemented in the final website. Challenges such as ensuring responsiveness and cross-browser compatibility were addressed during the development phase. The website was designed to be a web app, with features and functionalities that could be easily transitioned into a standalone mobile app in the future.
 
 ### 8. Reasoning and Justification
-The design choices were made to enhance user engagement and ensure a straightforward navigation experience. The chosen color palette and visual style aimed to create a fun yet sophisticated atmosphere. The prominent search bar encourages users to start exploring books immediately, while the TBR list provides an easy way to organize future reads. The clean and simple interface ensures that users of all ages and technical abilities can navigate the app effortlessly.
+The design choices were made to enhance user engagement and ensure a straightforward navigation experience. The chosen colour palette and visual style aimed to create a fun yet sophisticated atmosphere. The prominent search bar encourages users to start exploring books immediately, while the TBR list provides an easy way to organise future reads. The clean and simple interface ensures that users of all ages and technical abilities can navigate the app effortlessly.
 
 ### 9. Conclusion
-The UX design process for **"What the Book"** was thorough and iterative, ensuring that each design decision was user-centric and aligned with the project's goals. The result is a seamless and engaging web app that meets the needs of book lovers. Future improvements will focus on adding user accounts, personalized recommendations, user reviews, and social features based on user feedback.
+The UX design process for **"What the Book"** was thorough and iterative, ensuring that each design decision was user-centric and aligned with the project's goals. The result is a seamless and engaging web app that meets the needs of book lovers. Future improvements will focus on adding user accounts, personalised recommendations, user reviews, and social features based on user feedback.
+
 
 ## Features
 
@@ -118,16 +122,78 @@ Here is a list of the features that are currently implemented on the website as 
 - **TBR List:** The "To Be Read List" button opens a modal displaying all the books the user has added to their TBR list. Each entry includes the book cover, title, and author.
 - **Remove Button:** Users can remove books from their TBR list by clicking the "Remove" button under each book in the TBR list.
 
+#### Book Details and Google Books Integration
+
+- **Book Details:** Clicking on a book cover or title in the search results or TBR list opens a new tab with more details about the book on Google Books. This feature allows users to explore additional information and purchase options on Google Books.
+
 #### How It Works Modal
 
 - **Informative Text:** The "How It Works" button opens a modal that provides detailed information on how to use the website, including how to search for books, add them to the TBR list, and view or remove books from the TBR list.
 - **Social Media Links:** At the bottom of the "How It Works" modal, there are links to the website's social media pages. Users can click these links to open the social media pages in a new tab.
 
+#### Local Storage Integration
+
+- **Persistent TBR List:** The TBR list is stored locally in the user's browser, so their saved books persist between sessions without needing to log in.
+
+#### Responsiveness and Accessibility
+
+- **Responsive Design:** The website is designed to be fully functional and visually appealing on various devices, including desktops, tablets, and smartphones.
+- **Accessible Design:** Efforts have been made to ensure the site is accessible, including alt text for images and ARIA labels for buttons.
+
 ### Future Features:
 
--**Button Improvements** First update will make adding and removing from the list more inuitive. You won't have to go into the TBR list to remove a book you will be able to remove it from search.
+- **Button Improvements** First update will make adding and removing from the list more inuitive. You won't have to go into the TBR list to remove a book you will be able to remove it from search.
 - **Enhanced TBR Management:** Future updates will include features to categorise and prioritise books within the TBR list.
 - **Personalised Recommendations:** Integration of personalised book recommendations based on user preferences is a desired end goal.
 - **User Reviews and Ratings:** Allowing users to leave reviews and ratings for books they have read.
 - **Social Features:** Implementing social features that enable users to share their reading lists and favourite books with friends.
 
+## Technology
+
+1. **HTML:** Used to create the structure and content of the website.
+
+2. **CSS:** Applied to style the website and its content, ensuring a visually appealing and consistent design.
+
+3. **JavaScript:** Used to add interactivity and dynamic features to the website, including the search functionality and TBR list management.
+
+4. **[Git:](https://git-scm.com/)** Utilised for version control to track changes and manage the codebase effectively.
+
+5. **[Gitpod:](https://www.gitpod.io/)** Used as the integrated development environment (IDE) for coding, ensuring a seamless development process.
+
+6. **[GitHub:](https://github.com/)** To store, host, and deploy the website, providing a platform for version control and collaboration.
+
+7. **[Balsamiq:](https://balsamiq.com/)** Used to create wireframes for the design process, helping to visualise the layout and structure before implementation.
+
+8. **[Bootstrap:](https://getbootstrap.com/)** Utilised for the grid system and some of the 'card' features, ensuring a responsive and flexible design.
+
+9. **[Google Fonts:](https://fonts.google.com/)** Used for the typography on the site, specifically the Chivo font for a clean and modern aesthetic.
+
+10. **[Font Awesome:](https://fontawesome.com/)** For the icons on the site, providing a wide range of scalable vector icons.
+
+11. **[Google Books API:](https://developers.google.com/books/docs/overview)** Utilised to fetch book data, enabling users to search for books and view detailed information.
+
+12. **[Jest:](https://jestjs.io/)** A testing framework for JavaScript, used to write and run tests ensuring the functionality and reliability of the code.
+
+13. **[ChatGPT:](https://chat.openai.com/)** Utilised for troubleshooting code and as a starting point for text content, providing assistance and guidance throughout the development process.
+
+## Deployment
+
+#### Via Gitpod
+
+The project was successfully deployed using Gitpod. Here's how you can deploy your project on Gitpod:
+
+- Navigate to GitHub and find the repository you want to deploy using Gitpod.
+- Click on the "Gitpod" button, which you can find on the top right section of your repository page.
+- This action will initiate a new workspace in Gitpod for the project.
+- Within the Gitpod workspace, open the Terminal and execute the command python3 -m http.server.
+- Shortly after, a blue notification will appear at the bottom right corner, offering options to either make the server public, preview it, or open it in a browser.
+
+#### Via GitHub Pages
+
+The project was also deployed on GitHub Pages. To deploy your project on GitHub Pages, follow these steps:
+
+- Sign into your GitHub account and select the repository intended for deployment to GitHub Pages.
+- Navigate to the repository's "Settings" by clicking the button located on the top right corner of the repository section.
+- On the Settings page, scroll down until you find the "GitHub Pages" section in the left-hand menu.
+- In the "Source" section, click on the dropdown menu labeled "Branch" and change it from "None" to "Master".
+- The website will refresh automatically, and the deployment link will be displayed at the top of the GitHub Pages section.
