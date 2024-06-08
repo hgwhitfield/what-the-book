@@ -95,7 +95,7 @@ input.form-control:focus {
     margin: 0 auto; 
     padding-top: 1%;
     padding-bottom: 1%;
-    transition: transform 0.3s ease, background-color 0.3s ease; /
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .howitworks-btn {
