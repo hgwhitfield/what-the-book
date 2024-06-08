@@ -2,7 +2,7 @@
 
 ![Responsive Design Screenshot](../docs/images/responsiveness.png)
 
-:computer: View the live site **[here](https://hgwhitfield.github.io/Knit/)**
+:computer: View the live site **[here](https://hgwhitfield.github.io/what-the-book/)**
 
 **"What the Book"** is an engaging, user-friendly website dedicated to book enthusiasts everywhere. This digital haven serves as a dynamic platform for book lovers to discover, explore, and organize their next great reads. Designed with simplicity and accessibility in mind, **"What the Book"** ensures that users of all ages and technical abilities can easily navigate through its features.
 
