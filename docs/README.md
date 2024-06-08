@@ -91,3 +91,43 @@ The design choices were made to enhance user engagement and ensure a straightfor
 
 ### 9. Conclusion
 The UX design process for **"What the Book"** was thorough and iterative, ensuring that each design decision was user-centric and aligned with the project's goals. The result is a seamless and engaging web app that meets the needs of book lovers. Future improvements will focus on adding user accounts, personalized recommendations, user reviews, and social features based on user feedback.
+
+## Features
+
+Here is a list of the features that are currently implemented on the website as well as plans for future features:
+
+### Current Features:
+
+#### Logo
+
+- The large "What The Book" logo prominently displayed on the homepage serves as a welcoming emblem for book lovers.
+- Clicking on the logo conveniently brings users back to the homepage, ensuring easy navigation and a home base for visitors to return.
+
+#### Search Bar and Function
+
+- **Search Bar:** Located at the top of the homepage, the search bar allows users to find books by title, author name, or ISBN.
+- **Search Function:** Users can type in their query and hit Enter or click the search icon. The results are displayed with book covers, titles, and authors.
+
+#### Add to TBR List
+
+- **Add to TBR Button:** Each book in the search results has an "Add to TBR" button. Clicking this button adds the book to the user's personal To Be Read (TBR) list, which is stored locally in the browser.
+- **Added Indicator:** Books that have already been added to the TBR list are indicated by the button turning green and displaying "Added."
+
+#### TBR List Modal
+
+- **TBR List:** The "To Be Read List" button opens a modal displaying all the books the user has added to their TBR list. Each entry includes the book cover, title, and author.
+- **Remove Button:** Users can remove books from their TBR list by clicking the "Remove" button under each book in the TBR list.
+
+#### How It Works Modal
+
+- **Informative Text:** The "How It Works" button opens a modal that provides detailed information on how to use the website, including how to search for books, add them to the TBR list, and view or remove books from the TBR list.
+- **Social Media Links:** At the bottom of the "How It Works" modal, there are links to the website's social media pages. Users can click these links to open the social media pages in a new tab.
+
+### Future Features:
+
+-**Button Improvements** First update will make adding and removing from the list more inuitive. You won't have to go into the TBR list to remove a book you will be able to remove it from search.
+- **Enhanced TBR Management:** Future updates will include features to categorise and prioritise books within the TBR list.
+- **Personalised Recommendations:** Integration of personalised book recommendations based on user preferences is a desired end goal.
+- **User Reviews and Ratings:** Allowing users to leave reviews and ratings for books they have read.
+- **Social Features:** Implementing social features that enable users to share their reading lists and favourite books with friends.
+
