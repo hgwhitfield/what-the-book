@@ -34,6 +34,7 @@ This section provides evidence demonstrating that:
   - [Desktop Lighthouse Audit](#desktop-lighthouse-audit)
   - [Future Improvements](#future-improvements)
 - [Fixed Bugs](#fixed-bugs)
+- [Unresolved Bugs](#unresolved-bugs)
 
 ## Code Validation
 
