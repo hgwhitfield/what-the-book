@@ -19,6 +19,7 @@ The website is designed to be a functional, streamlined web app. The central fea
 - [Features](#features)
   - [Current Features](#current-features)
   - [Future Features](#future-features)
+- [Accessibility](#accessibility) 
 - [Technology](#technology)
 - [Deployment](#deployment)
   - [Via Gitpod](#via-gitpod)
@@ -148,6 +149,10 @@ Here is a list of the features that are currently implemented on the website as 
 - The large "What The Book" logo prominently displayed on the homepage serves as a welcoming emblem for book lovers.
 - Clicking on the logo conveniently brings users back to the homepage, ensuring easy navigation and a home base for visitors to return.
 
+#### Favicon
+
+- **Website Icon**: A favicon is used to represent the website icon in the browser tab. The favicon file, named `favicon.png`, is placed in the root directory of the project. It is linked in the HTML head section to ensure it is correctly displayed across all browsers.
+
 #### Search Bar and Function
 
 - **Search Bar:** Located at the top of the homepage, the search bar allows users to find books by title, author name, or ISBN.
@@ -176,6 +181,10 @@ Here is a list of the features that are currently implemented on the website as 
 
 - **Persistent TBR List:** The TBR list is stored locally in the user's browser, so their saved books persist between sessions without needing to log in.
 
+#### 404 Page
+
+- **Custom 404 Page:** A user-friendly 404 error page is included for potential side cases where a page is not found. This page includes a friendly error message and a button to navigate back to the homepage, ensuring users can easily return to the main site.
+
 #### Responsiveness and Accessibility
 
 - **Responsive Design:** The website is designed to be fully functional and visually appealing on various devices, including desktops, tablets, and smartphones.
@@ -188,6 +197,29 @@ Here is a list of the features that are currently implemented on the website as 
 - **Personalized Recommendations:** Integration of personalized book recommendations based on user preferences is a desired end goal.
 - **User Reviews and Ratings:** Allowing users to leave reviews and ratings for books they have read.
 - **Social Features:** Implementing social features that enable users to share their reading lists and favorite books with friends.
+
+## Accessibility
+
+Ensuring the website is accessible to all users is a key priority. Below are specific accessibility features implemented in the site:
+
+### ARIA Roles
+
+- **Role Attributes**: ARIA roles are used to define regions and functionalities of the website, making it easier for screen readers to interpret the content.
+
+### Keyboard Navigation Support
+
+- **Tab Navigation**: All interactive elements are accessible via keyboard navigation. Users can navigate through the site using the 'Tab' key to move to interactive elements and 'Enter' to activate them.
+
+### Alt Text for Images
+
+- **Descriptive Alt Text**: All images include descriptive alt text to provide context for users relying on screen readers.
+
+### Form Labels
+
+- **Accessible Forms**: Form elements include labels and instructions to ensure that users can interact with them easily, even with assistive technologies.
+
+These features ensure that **"What the Book"** is accessible and provides a positive user experience for all visitors, including those with disabilities.
+
 
 ## Technology
 
@@ -204,6 +236,7 @@ Here is a list of the features that are currently implemented on the website as 
 11. **[Google Books API:](https://developers.google.com/books/docs/overview)** Utilized to fetch book data, enabling users to search for books and view detailed information.
 12. **[Jest:](https://jestjs.io/)** A testing framework for JavaScript, used to write and run tests ensuring the functionality and reliability of the code.
 13. **[ChatGPT:](https://chat.openai.com/)** Utilized for troubleshooting code and as a starting point for text content, providing assistance and guidance throughout the development process.
+14. **[Favicon Generator. For real.:](https://realfavicongenerator.net/)** Used to create favicon file for website.
 
 ## Deployment
 

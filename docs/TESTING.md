@@ -41,7 +41,13 @@ This section provides evidence demonstrating that:
 
 - I have used the [HTML W3C Validator](https://validator.w3.org) to validate the HTML.
 
-![W3C HTML Validation](../docs/images/html-validation.png)
+#### index.html
+
+![W3C HTML Validation for index.html](../docs/images/html-validation-index.png)
+
+#### 404.html
+
+![W3C HTML Validation for 404.html](../docs/images/html-validation-404.png)
 
 ### CSS 
 
