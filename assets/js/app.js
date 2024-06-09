@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     searchInput.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
-            searchBooks(); 
+            searchBooks();
         }
     });
 });
