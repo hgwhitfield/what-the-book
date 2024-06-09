@@ -6,7 +6,7 @@
 
 **"What the Book"** is an engaging, user-friendly website dedicated to book enthusiasts everywhere. This digital haven serves as a dynamic platform for book lovers to discover, explore, and organize their next great reads. Designed with simplicity and accessibility in mind, **"What the Book"** ensures that users of all ages and technical abilities can easily navigate through its features.
 
-The website is designed to be a functional, streamlined web app. The central feature is the book search tool, allowing users to find books by title, author, or ISBN effortlessly. Each search result can we saved to the 'To Be Read' list which can be accessed later, allowing it to act as the online home for all the books a user may wish to read in the future.
+The website is designed to be a functional, streamlined web app. The central feature is the book search tool, allowing users to find books by title, author, or ISBN effortlessly. Each search result can be saved to the 'To Be Read' list which can be accessed later, allowing it to act as the online home for all the books a user may wish to read in the future.
 
 ## Table of Contents
 
@@ -88,7 +88,7 @@ The primary goal of the UX design process for **"What the Book"** was to create 
 
 ### 2. Research and Planning
 
-The research phase involved understanding the needs and preferences of book enthusiasts. We conducted surveys and interviews with potential users, which provided insights into their reading habits and how they currently manage their TBR lists. Analyzing competitor websites and apps helped us identify common features and areas for improvement. The planning phase focused on defining the core functionalities and ensuring that the design would be user-centric and adaptable for future enhancements.
+The research phase involved understanding the needs and preferences of book enthusiasts. Analysing competitor websites and apps helped us identify common features and areas for improvement. The planning phase focused on defining the core functionalities and ensuring that the design would be user-centric and adaptable for future enhancements.
 
 ### 3. Wireframes
 
@@ -236,7 +236,7 @@ These features ensure that **"What the Book"** is accessible and provides a posi
 11. **[Google Books API:](https://developers.google.com/books/docs/overview)** Utilized to fetch book data, enabling users to search for books and view detailed information.
 12. **[Jest:](https://jestjs.io/)** A testing framework for JavaScript, used to write and run tests ensuring the functionality and reliability of the code.
 13. **[ChatGPT:](https://chat.openai.com/)** Utilized for troubleshooting code and as a starting point for text content, providing assistance and guidance throughout the development process.
-14. **[Favicon Generator. For real.:](https://realfavicongenerator.net/)** Used to create favicon file for website.
+14. **[Favicon Generator. For real:](https://realfavicongenerator.net/)** Used to create favicon file for website.
 
 ## Deployment
 

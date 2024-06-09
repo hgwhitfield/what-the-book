@@ -328,3 +328,17 @@ During the development of **"What the Book"**, several bugs were identified and 
 **Bug:** Unnecessary console log statements were present in the production code, potentially affecting performance and user experience.
 
 **Fix:** Removed all console log statements from the production code to enhance performance and provide a cleaner user experience.
+
+## Unresolved Bugs
+
+Despite thorough testing and debugging, there is a rare occurrence of a specific issue that remains unresolved:
+
+### 1. "Add to TBR" Button Not Working for Specific Books
+
+**Bug:** In rare edge cases, the "Add to TBR" button does not function as expected for certain books. When attempting to add these books, the button click event does not trigger the addition to the TBR list. Instead, it appears to be ignored or behaves inconsistently.
+
+**Occurrence:** This issue has been observed with specific search results, such as the book "Man's Search for Meaning" by Viktor E. Frankl, and is not consistently reproducible across all books or searches and seems relatively rare.
+
+**Suspected Cause:** Initial investigations suggest that the issue might be related to the length or format of the book details, given that 3 of the same book title seem to reproduce it despite it being uncommon. This seems to be potentially causing a conflict in the button's event handling.
+
+**Future Plans:** Further debugging and refinement are planned to identify and resolve the root cause of this issue, ensuring consistent functionality for all books.
