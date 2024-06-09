@@ -64,8 +64,8 @@ function createBookElement(book, isAdded) {
     const imageUrl = book.imageLinks ? book.imageLinks.thumbnail.replace('http://', 'https://') : 'https://via.placeholder.com/128x200';
 
     bookElement.innerHTML = `
-        <div class="card h-100" onclick="window.open('${book.infoLink || book.previewLink}', '_blank')">
-            <figure>
+        <div class="card h-100">
+            <figure onclick="window.open('${book.infoLink || book.previewLink}', '_blank')">
                 <img src="${imageUrl}" class="card-img-top" alt="${book.title} cover image">
                 <figcaption>${book.title} by ${book.authors ? book.authors.join(', ') : 'Unknown Author'}</figcaption>
             </figure>
