@@ -25,7 +25,6 @@ The website is designed to be a functional, streamlined web app. The central fea
   - [Via Gitpod](#via-gitpod)
   - [Via GitHub Pages](#via-github-pages)
 - [Testing](#testing)
-- [Testing Documentation](testing.md)
 
 ## About the Website
 
@@ -259,6 +258,20 @@ The project was also deployed on GitHub Pages. To deploy your project on GitHub 
 - On the Settings page, scroll down until you find the "GitHub Pages" section in the left-hand menu.
 - In the "Source" section, click on the dropdown menu labeled "Branch" and change it from "None" to "Master".
 - The website will refresh automatically, and the deployment link will be displayed at the top of the GitHub Pages section.
+### Cloning
+
+This project can be cloned or forked in order to make a local copy on your own system.
+
+You can clone the repository by following these steps:
+
+1. Go to the [GitHub repository](https://github.com/hgwhitfield/what-the-book).
+2. Locate the **Code** button above the list of files and click it.
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard.
+4. Open Git Bash or Terminal.
+5. Change the current working directory to the one where you want the cloned directory.
+6. In your IDE Terminal, type the following command to clone the repository:
+   ```bash
+   git clone https://github.com/hgwhitfield/what-the-book.git
 
 ## Credits
 
